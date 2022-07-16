@@ -11,7 +11,7 @@ allCategories.unshift('All');
 // to add it in a an array or you can use spread and add allCategories = ['All',...courses.map((course) => course.category)]
 const App = () => {
   const [menuItems,setMenuItems] = useState(courses);
-  const [categories,setCategories] = useState(allCategories)
+  const categories = allCategories
 const filterItems = (category)=>{
   if (category === 'All'){
     setMenuItems(courses);
